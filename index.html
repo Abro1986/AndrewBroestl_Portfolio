@@ -35,23 +35,40 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Services</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
+    <header id='splash'>
+      <div>
+        <div class="row bg-secondary">
+          <div class='col text-center'>
+            <img class='service' src="image/react.png" alt="">
+          </div>
+          <div class='col text-center'>
+            <img class='service' src="image/node.png" alt="">
+          </div>
+          <div class='col text-center'>
+            <img class='service' src="image/python.png" alt="">
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <div class='row'>
+    <!-- Page Content -->
+    <div class="container" >
+
+      <div class='row' >
+        <div id='about'></div>
         <div class='col-md-7'>
           <img class="img-fluid rounded mb-3 mb-md-0" src='image/biggerme.png' alt="">
         </div>
@@ -139,20 +156,25 @@
       
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-dark" id='footer'>
       <div class="container">
         <div class="row">
-          <div class='col text-center'>
+          <div class='col text-center text-white'>
             <p>Phone: 970-443-2128</p>
           </div>
-          <div class='col text-center'>
+          <div class='col text-center text-white'>
             <p>Email: andrewbroestl@gmail.com</p>
           </div>
           <div class='col text-center'>
-             <a href="https://www.linkedin.com/in/andrewbroestl/">LinkedIn</a>
+             <a href="https://www.linkedin.com/in/andrewbroestl/">
+              <img class='service' src="image/linked.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/turdsonahook/">
+              <img class='service' src="image/insta.png" alt="">
+            </a>
           </div>
         </div>
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">Copyright &copy; Andrew Broestl 2018</p>
       </div>
       <!-- /.container -->
     </footer>
