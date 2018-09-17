@@ -174,30 +174,33 @@
             </a>
           </div>
         </div>
+        <br>
+        <h4 class='text-center text-white'>Send me an email using my adress above or feel free to use the form below to email me directly.</h4>
+        <br>
         <form action='https://fathomless-fortress-45044.herokuapp.com/api/mail' method="post" id='mailform' >
           <div class='form-row'>
             <div class='form-group col-md-6'>
               <label class='text-white' for='firstname'>first name</label>
-              <input type="text" class='form-control' name="name" id='firstname'>
+              <input type="text" class='form-control' name="name" id='firstname' required="">
             </div>
             <div class='form-group col-md-6'>
               <label class='text-white' for='lastname'>last name</label>
-              <input type="text" class='form-control' name="lastname" id='lastname'>
+              <input type="text" class='form-control' name="lastname" id='lastname' required="">
             </div>
           </div>
           <div class='form-group'>
             <div class='form-group'>
               <label class='text-white' for='email'>email</label>
-              <input type="text" class='form-control' name="email" id='email'>
+              <input type="text" class='form-control' name="email" id='email' required="">
             </div>
             <div class='form-group'>
               <label class='text-white' for='subject'>subject</label>
-              <input type="text" class='form-control' name="subject" id='subject'>
+              <input type="text" class='form-control' name="subject" id='subject' required="">
             </div>
           </div>
           <div class='form-group'>
             <label class='text-white' for='message'>message</label>
-            <textarea class='form-control' id='message' rows='4' name="text"></textarea>
+            <textarea class='form-control' id='message' rows='4' name="text" required=""></textarea>
           </div>
           <div class='text-center'>
             <button type='submit' form='mailform' class='text-center btn btn-primary btn-lrg'>Send it</button>

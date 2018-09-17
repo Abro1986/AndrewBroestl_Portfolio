@@ -10,7 +10,7 @@ $('#mailform').submit(function (e) {
 		type: 'POST',
 		data: $(this).serialize(),
 		success: function(data) {
-			$('#mailform').html(data);
+			$('#mailform').html(`<p class='text-white text-center'>${data}<p>`);
 		},
 		error: function (jXHR, textStatus, errorThrown) {
                 console.log(errorThrown);
